@@ -256,3 +256,58 @@ img {
     font-size: 1.1rem;
     padding: 0.5rem 1.3rem;
 }
+
+@media(max-width: 750px) {
+    .showcase {
+        height: 70vh;
+    }
+    .hide-sm {
+        display: none;
+    }
+    .header-top img {
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+    .header-content h1 {
+        font-size: 3.7rem;
+        line-height: 1;
+    }
+    .header-content p {
+        font-size: 1.5rem;
+    }
+
+    .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .button-top {
+        font-size: 1.5rem;
+        padding: 1.2rem 2rem;
+    }
+    .text-xl {
+        font-size: 1.5rem;
+    }
+    .text-lg {
+        font-size: 1.3rem;
+    }
+    .text-mid {
+        font-size: 1rem;
+    }
+}
+@media(max-width: 700px) {
+    .inner-1-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .tab2-content-top {
+        display: block;
+        text-align: center;
+    }
+    #tab-2-content .tab2-content-bottom {
+        grid-template-columns: 1fr;
+    }
+    .showcase::after {
+        background: rgba(0,0,0, 0.6);
+        box-shadow: inset 60px 60px 250px black, inset -60px -60px 250px black;
+    }
+}

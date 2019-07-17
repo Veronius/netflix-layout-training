@@ -122,8 +122,17 @@ img {
 .tab-content {
     padding: 3rem 0;
     color: white;
-
 }
+/*hiding tabs*/
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+}
+.show {
+    display: block !important;
+}
+
 .inner-1-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -255,6 +264,9 @@ img {
     text-transform: uppercase;
     font-size: 1.1rem;
     padding: 0.5rem 1.3rem;
+}
+.btn-icon {
+    margin-left: 1rem;
 }
 
 @media(max-width: 750px) {
